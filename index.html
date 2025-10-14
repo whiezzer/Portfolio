@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Portfolio-EndyTURRIN</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo_Portfolio.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li>Présentation</li>
+            <li>compétences</li>
+            <li>Projets</li>
+            <li>Me Contacter</li>
+          </ul>
+        </nav>
+        <div class="language">
+          <button class="lang-btn-fr" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang-btn-us" data-lang="en">🇺🇸 EN</button>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <div class="Titre">
+            <!-- titre principal -->
+            <h1>Portfolio Endy TURRIN</h1>
+            <!-- Présentation -->
+          </div>
+          <div class="presentation">
+            <div class="moi">
+              <img
+                src="./assets/Images/photo d'identité.jpg"
+                height="200"
+                alt="Photo d'identité"
+              />
+              <h3>Endy TURRIN</h3>
+            </div>
+            <p>
+              Bonjour, je me nomme <strong>Endy</strong> et je suis actuellement
+              étudiant au <strong>CNAM ENJMIN</strong>. J’aimerais pouvoir, lors
+              de mes études supérieures, me spécialiser dans la programmation de
+              jeux vidéo. J’ai actuellement plusieurs compétences en
+              programmation orientés jeux vidéo. Je maîtrise des logiciels tel
+              que unity, je sais maîtriser des langages de programmation tel que
+              <strong
+                >le C#, le SQL, le python et le html et je maitrise
+                github</strong
+              >. Je suis un passionné de jeux vidéo et j’adore le sport, le
+              dessin, les échecs ainsi que les films et séries d’animation.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="projets">
+            <h2>Projets</h2>
+
+            <div class="projet_space_invaders">
+              <img
+                src="./assets/Images/coming_soon.jpg"
+                height="300"
+                alt="coming soon"
+              />
+              <ul>
+                <li>But : reproduire le jeu Space Invaders</li>
+                <li>Outils : Thonny</li>
+                <li>langage de programmation : python</li>
+                <li>Temps: 12h</li>
+                <p>(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="Projet_Platformer_2d">
+              <img
+                src="./assets/Images/coming_soon.jpg"
+                height="300"
+                alt="coming soon"
+              />
+              <ul>
+                <li>
+                  But : créer mon premier platformer 2D à l’aide de tutos
+                  youtube et apprendre à maitriser le C# ainsi que Unity.
+                </li>
+                <li>Outils : Unity</li>
+                <li>langage de programmation : C#</li>
+                <li>En cours</li>
+                <p>(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="projet_ShootEm_Up">
+              <img
+                src="./assets/Images/coming_soon.jpg"
+                height="300"
+                alt="coming soon"
+              />
+              <ul>
+                <li>
+                  But : créer un Shoot’Em Up, en autonomie, où le joueur doit
+                  survivre à des vagues de zombies.
+                </li>
+                <li>Outils : Unity</li>
+                <li>langage de programmation : C#</li>
+                <li>En cours</li>
+                <p>(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="projet_groupe_NSI">
+              <img
+                src="./assets/Images/coming_soon.jpg"
+                height="300"
+                alt="coming soon"
+              />
+              <ul>
+                <li>
+                  But : créer un algorithme en python permettant de générer un
+                  paysage avec un nombre d’élément aléatoire grâce au module
+                  Turtle.
+                </li>
+                <li>Outils : Thonny</li>
+                <li>langage de programmation : python</li>
+                <li>Temps: 3h</li>
+                <p>(En groupe)</p>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="contact">
+            <!-- Les moyens de me contacter -->
+            <h2>Contactez moi</h2>
+
+            <form action="https://formspree.io/f/mdkwpvap" method="POST">
+              <label for="name" class="form-label"
+                >Nom
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required=""
+                />
+              </label>
+
+              <label for="email" class="form-label"
+                >Email
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+              </label>
+
+              <label for="message" class="form-label"
+                >Message
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  name="message"
+                ></textarea>
+              </label>
+
+              <input type="submit" value="Envoyer" id="btn-submit" />
+            </form>
+
+            <p>
+              <a href="https://www.linkedin.com/in/endy-turrin-449776377">
+                <i
+                  style="font-size: 60px"
+                  class="devicon-linkedin-plain colored"
+                >
+                </i>
+              </a>
+              <li>07 66 14 79 70</li>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer_content">
+          <p data-translate="footer-text">
+            © 2025 Endy Turrin - Tous droits réservés
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
