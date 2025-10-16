@@ -545,4 +545,17 @@ header {
   .projets li {
     margin-bottom: 0.2em;   /* Espacement minimal entre chaque ligne */
   }
+
+  section {
+    padding: 25px;
+    background: linear-gradient(to right, rgb(231, 160, 117), rgb(205, 109, 107));
+    border-radius: 20px;
+    border-style: inset;
+    border-color: rgb(194, 157, 12);
+    box-shadow: -5px 5px 0px #00000052;
+    width: 100%; /* 100% de la largeur de la fenêtre */
+    box-sizing: border-box; /* inclut padding et bordure dans la largeur */
+    margin: 150px 0;
+    box-sizing: border-box;
+  }
 }
