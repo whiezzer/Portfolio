@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Portfolio-EndyTURRIN</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo_Portfolio.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="menu-toggle" id="menu-toggle">
+          &#9776; <!-- icône hamburger -->
+        </div>
+
+        <nav id="nav-menu">
+          <ul>
+            <li>
+              <a href="#" data-translate="nav-presentation">Présentation</a>
+            </li>
+            <li>
+              <a href="#Competences" data-translate="nav-competences">Compétences</a>
+            </li>
+            <li><a href="#Projets" data-translate="nav-projects">Projets</a></li>
+            <li><a href="#Contact" data-translate="nav-contact">Me Contacter</a></li>
+            <li><a href="file:///C:/Users/cotis/Documents/document%20personel/CV_Endy_TURRIN.pdf" data-translate="nav-CV">Mon CV</a></li>
+          </ul>
+        </nav>
+
+
+        <div class="language">
+          <button class="lang-btn-fr" data-lang="fr">🇫🇷 FR</button>
+          <button class="lang-btn-us" data-lang="en">🇺🇸 EN</button>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <div class="Titre">
+            <!-- titre principal -->
+            <h1 data-translate="title-main">Portfolio Endy TURRIN</h1>
+            <!-- Présentation -->
+          </div>
+          <div class="presentation" id="Presontation">
+            <div class="moi">
+              <img
+                src="./assets/Images/photo d'identité.jpg"
+                height="200"
+                alt="Photo d'identité"
+              />
+              <h3>Endy TURRIN</h3>
+            </div>
+            <p data-translate="presentation-text">
+              Bonjour, je me nomme <strong>Endy</strong> et je suis actuellement
+              étudiant au <strong>CNAM ENJMIN</strong>. J’aimerais pouvoir, lors
+              de mes études supérieures, me spécialiser dans la programmation de
+              jeux vidéo. J’ai actuellement plusieurs compétences en
+              programmation orientés jeux vidéo. Je maîtrise des logiciels tel
+              que unity, je sais maîtriser des langages de programmation tel que
+              <strong
+                >le C#, le C++, le SQL, le python, le html, le CSS et le Java Script et je maitrise
+                github et Unity</strong
+              >. Je suis un passionné de jeux vidéo et j’adore le sport, le
+              dessin, les échecs ainsi que les films et séries d’animation.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="competences" id="Competences">
+            <h2 data-translate="skills-title">Compétences</h2>
+
+            <div class="Images_Competences">
+              <img src="./assets/Images/C.png" alt="logo_C#" />
+              <img
+                src="./assets/Images/Unity.png"
+                alt="logo_Unity"
+              />
+              <img src="./assets/Images/SQL.png" alt="logo_SQL" />
+              <img
+                src="./assets/Images/python.png"
+                alt="logo_python"
+              />
+              <img
+                src="./assets/Images/HTML.png"
+                alt="logo_HTML_CSS_et_JS"
+              />
+              <img src="./assets/Images/GitHub.png" alt="logo_GitHub" />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="projets" id="Projets">
+            <h2 data-translate="projects-title">Projets</h2>
+
+            <div class="projet_space_invaders">
+              <video width="350" height="300" controls>
+                <source
+                  src="./assets/videos/space_invaders.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <ul>
+                <li data-translate="invaders-goal">But : reproduire le jeu Space Invaders</li>
+                <li data-translate="invaders-tools">Outils : Thonny</li>
+                <li data-translate="invaders-lang">Langage de programmation : Python</li>
+                <li data-translate="invaders-time">Temps : 12h</li>
+                <p data-translate="solo">(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="Projet_Platformer_2d">
+              <video width="350" height="300" controls>
+                <source
+                  src="./assets/videos/projet_platformer.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <ul>
+                <li data-translate="platformer-goal">
+                  But : créer mon premier platformer 2D à l’aide de tutos YouTube et apprendre à maîtriser le C# ainsi que Unity.
+                </li>
+                <li data-translate="platformer-tools">Outils : Unity</li>
+                <li data-translate="platformer-lang">Langage de programmation : C#</li>
+                <li data-translate="platformer-status">En cours</li>
+                <p data-translate="solo">(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="projet_ShootEm_Up">
+              <video width="350" height="300" controls>
+                <source
+                  src="./assets/videos/projet_shoot_them_up.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <ul>
+                <li data-translate="shootemup-goal">
+                  But : créer un Shoot’Em Up, en autonomie, où le joueur doit survivre à des vagues de zombies.
+                </li>
+                <li data-translate="shootemup-tools">Outils : Unity</li>
+                <li data-translate="shootemup-lang">Langage de programmation : C#</li>
+                <li data-translate="shootemup-status">En cours</li>
+                <p data-translate="solo">(En solo)</p>
+              </ul>
+            </div>
+
+            <div class="projet_groupe_NSI">
+              <img
+                src="./assets/Images/imeuble.png"
+                height="300"
+                alt="deux payssage avec plusieurs éléments comme des imeubles dont le nombre et alétoire"
+              />
+              <ul>
+                <li data-translate="nsi-goal">
+                  But : créer un algorithme en Python permettant de générer un paysage avec un nombre d’éléments aléatoire grâce au module Turtle.
+                </li>
+                <li data-translate="nsi-tools">Outils : Thonny</li>
+                <li data-translate="nsi-lang">Langage de programmation : Python</li>
+                <li data-translate="nsi-time">Temps : 3h</li>
+                <p data-translate="groupe">(En groupe)</p>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="contact" id="Contact">
+            <!-- Les moyens de me contacter -->
+            <h2 data-translate="contact-title">Contactez moi</h2>
+
+            <form action="https://formspree.io/f/mdkwpvap" method="POST">
+              <label for="name" class="form-label">
+                <span data-translate="label-name">Nom</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required=""
+                />
+              </label>
+
+              <label for="email" class="form-label">
+                <span data-translate="label-email">Email</span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+              </label>
+
+              <label for="message" class="form-label">
+                <span data-translate="label-message">Message</span>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  name="message"
+                ></textarea>
+              </label>
+
+              <input type="submit" value="Send" id="btn-submit"/>
+            </form>
+
+            <p>
+              <a href="https://www.linkedin.com/in/endy-turrin-449776377">
+                <i
+                  style="font-size: 60px"
+                  class="devicon-linkedin-plain colored"
+                >
+                </i>
+              </a>
+              <div class="tel">
+                <img src="./assets/Images/tel.png" height="70" alt="logo_C#" />
+                <li>+33 7 66 14 79 70</li>
+              </div>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer_content">
+          <p data-translate="footer-text">
+            © 2025 Endy Turrin - Tous droits réservés
+          </p>
+          <button id="legal-btn" class="mentions-button">© Mentions légales</button>
+
+          <div id="legal-modal" class="legal-modal">
+          <div class="legal-content">
+            <span class="close">&times;</span>
+            <h2>Mentions légales</h2>
+            <p>
+              <strong>Propriétaire du site :</strong> Endy TURRIN<br>
+              <strong>Contact :</strong> +33 7 66 14 79 70 / 
+              <a href="mailto:endy.turrin@example.com">endyturrin@gmail.com</a><br>
+              <strong>Hébergeur :</strong> GitHub Pages<br>
+              <strong>Crédits :</strong> Conception et développement par Endy TURRIN.<br><br>
+              Les images, logos et vidéos présents sur ce site sont la propriété de leurs auteurs respectifs.<br>
+              Toute reproduction, même partielle, est interdite sans autorisation préalable.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
