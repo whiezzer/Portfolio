@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url("./assets/Images/Fond.jpg") center/ cover;
+    background: url("./assets/images/BackGroundJV.jpg") center/ cover;
     margin: 0 auto;
 }
 
@@ -12,6 +12,10 @@ nav {
     justify-content: center;
     gap: 50px;
     color: rgb(189, 154, 154);
+}
+
+#nav-menu a{
+    color: aliceblue;
 }
 
 header ul {
@@ -171,6 +175,17 @@ p {
 }
 
 .projet_groupe_NSI {
+    display: flex;
+    text-transform: uppercase;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 50% 20% / 10% 15%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
+.projet_groupe_EnJam {
     display: flex;
     text-transform: uppercase;
     color: #252f61;
@@ -526,7 +541,8 @@ header {
   .projet_space_invaders,
   .Projet_Platformer_2d,
   .projet_ShootEm_Up,
-  .projet_groupe_NSI {
+  .projet_groupe_NSI,
+  .projet_groupe_EnJam {
     flex-direction: column;
     align-items: center;
     text-align: center;
