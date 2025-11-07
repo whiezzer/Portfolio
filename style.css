@@ -3,7 +3,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url("./assets/Images/BackGroundJV.jpg") center/ cover;
+    background: url("./assets/Images/BackGround3.png") center/ cover;
     margin: 0 auto;
 }
 
@@ -301,11 +301,9 @@ h2 {
   filter: drop-shadow(0 0 5px gold);
 }
 
-.contact .tel li {
+.contact .tel p {
   list-style: none;
   color: gold;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -328,10 +326,14 @@ section {
   font-family: "Oswald", sans-serif;
 }
 
+.footer_content p {
+    color: aliceblue;
+}
+
 .mentions-button {
   background: none;
   border: none;
-  color: #2b3255;
+  color: aliceblue;
   font-size: 0.95rem;
   cursor: pointer;
   transition: color 0.3s;
@@ -540,7 +542,7 @@ header {
     width: 95%;
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50px;
     box-sizing: border-box;
   }
 
@@ -551,9 +553,9 @@ header {
   .projet_groupe_EnJam {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 15px;
     margin: 10px;
+    border-radius: 10% 10% / 10% 10%;
   }
 
   .projets ul {
@@ -566,6 +568,12 @@ header {
 
   .projets li {
     margin-bottom: 0.2em;   /* Espacement minimal entre chaque ligne */
+  }
+
+  .contact .tel {
+    width: 100%;
+    gap: 0px;
+    font-size: 0.68rem;
   }
 
   section {
