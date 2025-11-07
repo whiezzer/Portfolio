@@ -148,7 +148,7 @@ p {
     text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
-    border-radius: 50% 20% / 10% 15%;
+    border-radius: 3%;
     margin: 10px 10px;
     padding: 25px;
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -159,7 +159,7 @@ p {
     text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
-    border-radius: 50% 20% / 10% 15%;
+    border-radius: 3%;
     margin: 10px 10px;
     padding: 25px;
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -170,7 +170,7 @@ p {
     text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
-    border-radius: 50% 20% / 10% 15%;
+    border-radius: 3%;
     margin: 10px 10px;
     padding: 25px;
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -181,7 +181,7 @@ p {
     text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
-    border-radius: 50% 20% / 10% 15%;
+    border-radius: 3%;
     margin: 10px 10px;
     padding: 25px;
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -192,7 +192,7 @@ p {
     text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
-    border-radius: 50% 20% / 10% 15%;
+    border-radius: 3%;
     margin: 10px 10px;
     padding: 25px;
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -552,14 +552,16 @@ header {
   .projet_groupe_NSI,
   .projet_groupe_EnJam {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 15px;
     margin: 10px;
     border-radius: 10% 10% / 10% 10%;
+    gap: 10px;
   }
 
   .projets ul {
-    width: 90%;
+    align-items: flex-start; 
+    width: 80%;
     margin: 0 auto;
     font-size: 0.85rem;     /* Texte plus petit */
     line-height: 1.2;       /* Moins d’espace vertical */
@@ -567,7 +569,7 @@ header {
   }
 
   .projets li {
-    margin-bottom: 0.2em;   /* Espacement minimal entre chaque ligne */
+    margin-bottom: 0.2em;  /* Espacement minimal entre chaque ligne */
   }
 
   .contact .tel {
