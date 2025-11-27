@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav-competences": "Skills",
       "nav-contact": "Contact",
       "nav-CV": "My CV",
-      "nav-Accueil": "Reception",
+      "nav-Accueil": "Home",
       "title-main-Portfolio": "Endy TURRIN Portfolio",
       "title-main": "Endy TURRIN's website",
       "presentation-text": "Hello, my name is <strong>Endy</strong> and I am currently a student at <strong>CNAM ENJMIN</strong>. During my higher education, I would like to specialize in video game programming. I currently have several skills in game-oriented programming. I know programming languages including <strong>C#, SQL, Python, HTML, CSS, and JavaScript, and I am proficient with GitHub and Unity</strong>. I am passionate about video games and I also love sports, drawing, chess, as well as animated films and series.",
