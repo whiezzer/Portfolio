@@ -17,6 +17,17 @@ nav {
 
 #nav-menu a{
     color: aliceblue;
+    background: rgba(255, 223, 128, 0.1); /* Doré transparent */
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+}
+
+#nav-menu a:hover {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
 }
 
 #nav-menu-portfolio {
@@ -320,23 +331,27 @@ h2 {
     grid-template-rows: 17% 25% 55% 5%;
     align-items: center;
     background: rgba(255, 216, 157, 0.103);
+    border-radius: 5%;
     margin: 25px 10px;
     padding: 35px;
     box-shadow: 0px 0px 100px 10px rgb(46, 11, 11);
+    border: 2px solid gold;
 }
 
 .contact label {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .contact textarea {
     resize: vertical;
-    padding: 10px;
+    padding: 50px;
 }
 
 .contact input {
-    padding: 5px;
+    padding: 5px 125px;
+    border-radius: 5%;
 }
 
 #btn-submit {
