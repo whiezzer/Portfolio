@@ -12,10 +12,32 @@ nav {
     justify-content: center;
     gap: 50px;
     color: rgb(189, 154, 154);
+    text-align: left;
 }
 
 #nav-menu a{
     color: aliceblue;
+}
+
+#nav-menu-portfolio {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+#nav-menu-portfolio a{
+    color: aliceblue;
+    background: rgba(255, 223, 128, 0.1); /* Doré transparent */
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    padding: 0px 10px;
+}
+
+#nav-menu-portfolio a:hover {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
 }
 
 header ul {
@@ -41,8 +63,10 @@ header li {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    position: fixed;
-    right: 0;
+    position: absolute; 
+    right: 50px;
+    top: 0;
+    z-index: 1001;
 }
 
 .language button {
@@ -64,6 +88,7 @@ header li {
     transform: scale(1.05);
     transition: transform 0.2s ease;
 }
+
 .lang-btn-fr {
     color: #2b3255;
     background: linear-gradient(to right, rgb(231, 160, 117), rgb(205, 109, 107));
@@ -78,6 +103,20 @@ header li {
     border-color: rgb(41, 65, 45);
 }
 
+.header-portfolio h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: -5px 5px 2px #00000052;
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    width: fit-content;
+} 
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -88,7 +127,7 @@ h1 {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
-} 
+}
 
 .presentation {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
@@ -523,6 +562,7 @@ header {
     font-size: 2rem;
     cursor: pointer;
     color: #f4f4f4;
+    z-index: 1002; /* au-dessus de tout */
 }
 
 /* Menu normal */
@@ -535,6 +575,13 @@ header {
 @media screen and (max-width: 950px) {
     header {
         justify-content: flex-start; /* bouton/menu à gauche sur mobile */
+        padding: 20px 0px;
+    }
+
+    .header-portfolio {
+        display: flex;
+        justify-content: flex-start; /* bouton/menu à gauche sur mobile */
+        padding: 5px 0px;
     }
 
     .menu-toggle {
@@ -554,7 +601,24 @@ header {
         min-width: 150px;
     }
 
+    #nav-menu-portfolio {
+        display: none;
+        flex-direction: column;
+        position: absolute; /* menu flottant par-dessus le contenu */
+        top: 60px; /* juste sous le header */
+        left: 20px; /* aligné à gauche */
+        background: rgba(36, 27, 58, 0.95);
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 1001; /* au-dessus du header */
+        min-width: 150px;
+    }
+
     #nav-menu.active {
+        display: flex;
+    }
+
+    #nav-menu-portfolio.active {
         display: flex;
     }
 
@@ -565,6 +629,36 @@ header {
         margin: 0;
         list-style: none;
     }
+
+    #nav-menu-portfolio ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #header-portfolio h1 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;         
+        width: 75vw;      
+    }
+
+
+
+    .language {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    z-index: 1001;
+}
+
 
   .projets {
     gap: 2em;

@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "invaders-tools": "Outils : Thonny",
       "invaders-lang": "Langage de programmation : Python",
       "invaders-time": "Temps : 12h",
+      "platformer": "Platformer 2D",
       "platformer-goal": "J'ai créé mon premier platformer 2D à l’aide de tutos YouTube et j'ai apprie à maîtriser le C# ainsi que Unity.",
       "platformer-tools": "Outils : Unity",
       "platformer-lang": "Langage de programmation : C#",
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "invaders-tools": "Tools : Thonny",
       "invaders-lang": "Programming language : Python",
       "invaders-time": "Time : 12h",
+      "platformer": "2D Platformer",
       "platformer-goal": "I created my first 2D platformer using YouTube tutorials and I learned to master C# as well as Unity.",
       "platformer-tools": "Tools : Unity",
       "platformer-lang": "Programming language : C#",
@@ -140,17 +142,32 @@ document.addEventListener("DOMContentLoaded", () => {
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
 
-// Ouvrir/fermer le menu
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
-
-// Fermer le menu quand on clique sur un lien
-navMenu.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
   });
-});
+
+  navMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  });
+}
+
+const menuTogglePortfolio = document.getElementById("menu-toggle-portfolio");
+const navMenuPortfolio = document.getElementById("nav-menu-portfolio");
+
+if (menuTogglePortfolio && navMenuPortfolio) {
+  menuTogglePortfolio.addEventListener("click", () => {
+    navMenuPortfolio.classList.toggle("active");
+  });
+
+  navMenuPortfolio.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenuPortfolio.classList.remove("active");
+    });
+  });
+}
 
 let lastScroll = 0;
 const header = document.querySelector("header");
