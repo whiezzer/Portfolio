@@ -219,6 +219,18 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
+.projets h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: -5px 5px 7px #00000052;
+    color: #2b3255;
+    font-family: "Oswald", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+}
+
 .projets video {
     border-style: ridge;
     border-color: rgb(192, 153, 0);
