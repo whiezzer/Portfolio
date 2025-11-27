@@ -66,8 +66,9 @@ header li {
 }
 
 #Competences,
-#Projets {
-  scroll-margin-top: 50vh;
+#Projets,
+#CV {
+  scroll-margin-top: 25vh;
 }
 
 .language {
@@ -88,6 +89,7 @@ header li {
     border-radius: 5px;
     margin: 3px 0;
 }
+
 .language button.active {
   outline: 2px solid gold;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
@@ -316,6 +318,55 @@ h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 250;
     font-style: normal;
+}
+
+.CV {
+    display: flex;
+    gap: 50px;
+}
+
+.CV img {
+    width: 25%;
+    border: 2px solid gold;
+    border-radius: 5%;
+}
+
+.CV img:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+.CV a{
+    color: aliceblue;
+    font-size: 1.5rem;
+    background: #2b3255;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 5px 50px;
+}
+
+.CV a.active {
+  outline: 2px solid gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.CV a:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.CV h2 {
+    margin: 0 0;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .contact {
