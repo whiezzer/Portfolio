@@ -152,6 +152,12 @@ h1 {
     border-radius: 50% 20% / 10% 25%;
     margin: 10px 10px;
     padding: 25px;
+    border: 2px solid gold;
+}
+
+.presentation:hover {
+    transform: scale(1.007);
+    transition: transform 0.2s ease;
 }
 
 .moi {
@@ -175,18 +181,36 @@ p {
     width: 100%;
 }
 
+.moi img:hover {
+    transform: scale(1.020);
+    transition: transform 0.2s ease;
+}
+
+.Apropos {
+    position: relative;
+    padding: 10px 0px;
+}
+
 .Apropos p {
     text-align: left;
     text-transform: initial;
 }
 
 .Apropos a{
+    position: absolute;
+    right: 0px;
     color: aliceblue;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     background: #2b3255;
     border: 2px solid gold;
     border-radius: 8px;
-    padding: 5px 50px;
+    padding: 5px 20px;
+}
+
+.Apropos a:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
 .Apropos li {
@@ -207,6 +231,14 @@ p {
     background-repeat: no-repeat;
 }
 
+.Apropos h3 {
+    color: aliceblue;
+    background: #2b3255;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: -4px 0 0 0 gold;
+}
+
 .Images_Competences {
     display: flex;
     justify-content: center;
@@ -215,9 +247,14 @@ p {
 }
 
 .Images_Competences img {
-    flex: 0 0 10px; /* largeur fixe, pas d’élargissement */
+    flex: 0 0 10px; 
     height: auto;
     width: 125px;
+}
+
+.Images_Competences img:hover {
+    transform: scale(1.050);
+    transition: transform 0.2s ease;
 }
 
 .Images_Competences a {
@@ -227,7 +264,7 @@ p {
     gap: 15px;
     padding: 15px 25px;
     margin-top: 20px;
-    background: rgba(255, 223, 128, 0.1); /* Doré transparent */
+    background: rgba(255, 223, 128, 0.1); 
     border: 2px solid gold;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
@@ -420,6 +457,11 @@ h2 {
     border: 2px solid gold;
 }
 
+.contact form:hover {
+    transform: scale(1.020);
+    transition: transform 0.2s ease;
+}
+
 .contact label {
     display: flex;
     flex-direction: column;
@@ -443,6 +485,8 @@ h2 {
 
 #btn-submit:hover {
     color: #c31212;
+    transform: scale(1.020);
+    transition: transform 0.2s ease;
 }
 
 .contact .tel {
