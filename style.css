@@ -170,10 +170,41 @@ p {
 .moi img {
     border-style: ridge;
     border-color: gold;
-    border-radius: 100%;
+    border-radius: 100px;
     box-shadow: 0px 12px 10px 3px #030711;
     width: 100%;
+}
 
+.Apropos p {
+    text-align: left;
+    text-transform: initial;
+}
+
+.Apropos a{
+    color: aliceblue;
+    font-size: 1.5rem;
+    background: #2b3255;
+    border: 2px solid gold;
+    border-radius: 8px;
+    padding: 5px 50px;
+}
+
+.Apropos li {
+    list-style: none;        
+    position: relative;
+    padding-left: 30px;      
+}
+
+.Apropos li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;              
+    width: 16px;            
+    height: 16px;          
+    background-image: url("./assets/Images/puce.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
 }
 
 .Images_Competences {
