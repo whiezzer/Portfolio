@@ -664,13 +664,24 @@ section {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .Images_Competences {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px;
     justify-items: center;
+    }
+
+    .Apropos a{
+        position: absolute;
+        bottom: 0px;
+        color: aliceblue;
+        font-size: 0.7rem;
+        background: #2b3255;
+        border: 2px solid gold;
+        border-radius: 8px;
+        padding: 5px 20px;
     }
 }
 
@@ -792,15 +803,14 @@ header {
 
 
     .language {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    position: absolute; 
-    right: 0;
-    top: 0;
-    z-index: 1001;
-}
-
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: absolute; 
+        right: 0;
+        top: 0;
+        z-index: 1001;
+    }
 
   .projets {
     gap: 2em;
