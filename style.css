@@ -135,7 +135,7 @@ h1 {
     letter-spacing: 3px;
     text-align: center;
     font-size: 2.5rem;
-    text-shadow: -5px 5px 2px #00000052;
+    text-shadow: -5px 5px 2px #0000002c;
     color: #2b3255;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -143,8 +143,8 @@ h1 {
 }
 
 .presentation {
-    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
-    text-shadow: 4px 4px 7px #15074878;
+    box-shadow: -13px 16px 20px 0px rgba(46, 11, 11, 0.445);
+    text-shadow: 4px 4px 7px #15074836;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +177,7 @@ p {
     border-style: ridge;
     border-color: gold;
     border-radius: 100px;
-    box-shadow: 0px 12px 10px 3px #030711;
+    box-shadow: 0px 12px 10px 3px #03071160;
     width: 100%;
 }
 
@@ -453,7 +453,7 @@ h2 {
     border-radius: 5%;
     margin: 25px 10px;
     padding: 35px;
-    box-shadow: 0px 0px 100px 10px rgb(46, 11, 11);
+    box-shadow: 0px 0px 100px 10px rgba(46, 11, 11, 0.703);
     border: 2px solid gold;
 }
 
