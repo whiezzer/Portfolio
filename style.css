@@ -340,6 +340,17 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
+.projet_groupe_Mars2 {
+    display: flex;
+    text-transform: uppercase;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
 .projet_groupe_Village_fortifie {
     display: flex;
     text-transform: uppercase;
