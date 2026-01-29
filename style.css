@@ -17,7 +17,7 @@ nav {
 
 #nav-menu a{
     color: aliceblue;
-    background: rgba(255, 223, 128, 0.1); /* Doré transparent */
+    background: rgba(255, 223, 128, 0.1); 
     border: 2px solid gold;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
@@ -278,7 +278,8 @@ p {
   transform: translateY(-3px);
 }
 
-.projets {
+.projets,
+.Projects-3D {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -339,7 +340,42 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
-.projets h2 {
+.projet_groupe_Village_fortifie {
+    display: flex;
+    text-transform: uppercase;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
+.imagesVillage {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.buttonImage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagesVillage button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.imagesVillage button:hover {
+  color: orange;
+}
+
+.projets h2,
+.Projects-3D h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -360,6 +396,15 @@ p {
     width: 50%;
 }
 
+.Projects-3D video {
+    border-style: ridge;
+    border-color: rgb(192, 153, 0);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5%;
+    width: 100%;
+}
+
 .projets img {
     border-style: ridge;
     border-color: rgb(192, 153, 0);
@@ -369,7 +414,17 @@ p {
     width: 50%;
 }
 
-.projets ul {
+.Projects-3D img {
+    border-style: ridge;
+    border-color: rgb(192, 153, 0);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5%;
+    width: 100%;
+}
+
+.projets ul,
+.Projects-3D ul {
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -386,6 +441,12 @@ h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 250;
     font-style: normal;
+}
+
+.Titre-Portfolio-Sections {
+    background: #1f284f;
+    color: #ffffff;
+    border: 2px solid gold;
 }
 
 .CV {
@@ -812,12 +873,14 @@ header {
         z-index: 1001;
     }
 
-  .projets {
+  .projets,
+  .Projects-3D {
     gap: 2em;
   }
 
   .projets video,
-  .projets img {
+  .projets img,
+  .imagesVillage {
     width: 95%;
     max-width: 100%;
     height: auto;
@@ -829,7 +892,8 @@ header {
   .Projet_Platformer_2d,
   .projet_ShootEm_Up,
   .projet_groupe_NSI,
-  .projet_groupe_EnJam {
+  .projet_groupe_EnJam,
+  .projet_groupe_Village_fortifie {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px;
@@ -838,7 +902,8 @@ header {
     gap: 10px;
   }
 
-  .projets ul {
+  .projets ul,
+  .Projects-3D ul {
     align-items: flex-start; 
     width: 80%;
     margin: 0 auto;
@@ -847,7 +912,8 @@ header {
     gap: 0.4em;             /* Espacement réduit entre les lignes */
   }
 
-  .projets li {
+  .projets li,
+  .Projects-3D li {
     margin-bottom: 0.2em;  /* Espacement minimal entre chaque ligne */
   }
 

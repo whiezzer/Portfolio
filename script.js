@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "title-main": "Site Endy TURRIN",
       "presentation-text": "Bonjour, je me nomme <strong>Endy</strong> et je suis actuellement étudiant au <strong>CNAM ENJMIN</strong>. J’aimerais pouvoir, lors de mes études supérieures, me spécialiser dans la programmation de jeux vidéo. J’ai actuellement plusieurs compétences en programmation orientés jeux vidéo. Je sais maîtriser des langages de programmation tel que <strong>le C#, le SQL, le python, le html, le CSS et le Java Script et je maitrise github et Unity</strong>. Je suis un passionné de jeux vidéo et j’adore le sport, le dessin, les échecs ainsi que les films et séries d’animation.",
       "h3-1": "Recherche d’alternance",
-      "alternance": "Je suis actuellement à la recherche d’une alternance à raison de quatre jours par semaine (du lundi au jeudi), à partir de janvier 2026.",
+      "alternance": "Je suis actuellement à la recherche d’une alternance à raison de quatre jours par semaine (du lundi au jeudi).",
       "h3-2": "Avantages de l'alternance",
-      "avantage1": "Aide exceptionnelle de 5 000 €",
       "info": "Pour plus d'informations",
-      "avantage2": "Possibilité de n’avoir aucun reste à charge pour financer la formation",
+      "avantage1": "Possibilité de n’avoir aucun reste à charge pour financer la formation",
       "h3-3": "Mon parcours",
       "parcours": "Je suis actuellement étudiant au CNAM-ENJMIN à Angoulême en licence informatique parcours jeux vidéo",
       "skills-title": "Compétences",
@@ -48,6 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "JAM-lang": "Langage de programmation : C#",
       "JAM-time": "Temps : 3 days",
       "JAM-link": "Page itch: ",
+      "groupe_village": "projet de groupe Village fortifié 3D",
+      "village-goal": "J'ai fais un projet de groupe où on devait réaliser un village fortifié à l'aide d'assets qu'on devait réaliser nous même sur blender dans le cadre de mes cours au sein du CNAM-ENJMIN. Voici ce que j'ai pu réaliser.",
+      "village-tools": "Outils : Blender",
+      "village-time": "Temps : 3h",
       "solo": "(Seul)",
       "groupe": "(En groupe)",
       "BoutonCV": "voir",
@@ -74,11 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "title-main": "Endy TURRIN's website",
       "presentation-text": "Hello, my name is <strong>Endy</strong> and I am currently a student at <strong>CNAM ENJMIN</strong>. During my higher education, I would like to specialize in video game programming. I currently have several skills in game-oriented programming. I know programming languages including <strong>C#, SQL, Python, HTML, CSS, and JavaScript, and I am proficient with GitHub and Unity</strong>. I am passionate about video games and I also love sports, drawing, chess, as well as animated films and series.",
       "h3-1": "Looking for an apprenticeship",
-      "alternance": "I am currently looking for a apprenticeship of four days a week (Monday to Thursday), starting in January 2026.",
+      "alternance": "I am currently looking for a apprenticeship of four days a week (Monday to Thursday).",
       "h3-2": "Advantages of apprenticeship",
-      "avantage1": "Exceptional aid of 5,000 €",
       "info": "For more information",
-      "avantage2": "Possibility of having no out-of-pocket expenses to finance the training",
+      "avantage1": "Possibility of having no out-of-pocket expenses to finance the training",
       "h3-3": "My educational path",
       "parcours": "I am currently a student at CNAM-ENJMIN in Angoulême, studying for a Bachelor's degree in Computer Science with a specialization in Video Games.",
       "skills-title": "Skills",
@@ -111,6 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "JAM-lang": "Programming language : C#",
       "JAM-time": "Time : 3 days",
       "JAM-link": "itch page : ",
+      "groupe_village": "3D Fortified Village Group Project",
+      "village-goal": "I worked on a group project where we had to create a fortified village using assets that we had to create ourselves in Blender as part of my coursework at CNAM-ENJMIN. Here's what I was able to create.",
+      "village-tools": "Tools : Blender",
+      "village-time": "Time : 3h",
       "solo": "(Alone)",
       "groupe": "(In group)",
       "BoutonCV": "view",
@@ -224,3 +230,24 @@ window.onclick = function(event) {
     legalModal.style.display = "none";
   }
 }
+
+const images = [
+  "./assets/Images/RenduMurails.png",
+  "./assets/Images/RenduTours.png",
+];
+
+let index = 0;
+
+const img = document.getElementById("imageVillage");
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+
+right.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  img.src = images[index];
+});
+
+left.addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
+  img.src = images[index];
+});
