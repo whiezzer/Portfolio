@@ -241,9 +241,9 @@ p {
 
 .Images_Competences {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    align-items: center;
 }
 
 .Images_Competences img {
@@ -743,24 +743,13 @@ section {
 }
 
 @media screen and (max-width: 1300px) {
-    .Images_Competences {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
-    justify-items: center;
+    .Link {
+    width: 50%;
+    overflow-wrap: break-word;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .Images_Competences {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 50px;
-    justify-items: center;
-    }
-
     .Apropos a{
         position: absolute;
         bottom: 0px;
@@ -775,15 +764,6 @@ section {
     .Game_links {
     display: flex;
     flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 625px) {
-    .Images_Competences {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
     }
 }
 
@@ -924,6 +904,7 @@ header {
   .projet_groupe_NSI,
   .projet_groupe_EnJam,
   .projet_groupe_Mars2,
+  .projet_groupe_editeur_perso,
   .projet_groupe_Village_fortifie {
     flex-direction: column;
     align-items: flex-start;
