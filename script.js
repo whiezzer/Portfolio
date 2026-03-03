@@ -51,12 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
       "Mars2-tools": "Outils : Unity",
       "Mars2-lang": "Langage de programmation : C#",
       "Mars2-time": "Temps : 1 semaine",
+      "Editeur-perso-title" : "Editeur de perso 3D",
+      "Editeur-perso-goal": "Un projet de Jam réalisé en deux semaines dans le cadre de mes cours au sein du CNAM Enjmin. J'ai réalisé la totalité de la partie programmation du projet et j'ai été aidé par deux artistes qui ont réalisé les assets visuels du personnage, du menu, de la skybox ainsi que du piédestal qui supporte le personnage.",
+      "Editeur-perso-tools": "Outils : Unreal",
+      "Editeur-perso-lang": "Système de scripting visuel : Blueprint",
+      "Editeur-perso-time": "Temps : 2 semaine",
       "groupe_village": "projet de groupe Village fortifié 3D",
       "village-goal": "J'ai fais un projet de groupe où on devait réaliser un village fortifié à l'aide d'assets qu'on devait réaliser nous même sur blender dans le cadre de mes cours au sein du CNAM-ENJMIN. Voici ce que j'ai pu réaliser.",
       "village-tools": "Outils : Blender",
       "village-time": "Temps : 3h",
       "solo": "(Seul)",
       "groupe": "(En groupe)",
+      "code" : "Code du jeu :",
       "BoutonCV": "voir",
       "nav-Portfolio": "Mon Portfolio",
       "legal-title": "Mentions légales",
@@ -121,12 +127,18 @@ document.addEventListener("DOMContentLoaded", () => {
       "Mars2-tools": "Tools : Unity",
       "Mars2-lang": "Programming language : C#",
       "Mars2-time": "Time : 1 week",
+      "Editeur-perso-title" : "3D character editor",
+      "Editeur-perso-goal": "A Jam project completed in two weeks as part of my courses at CNAM Enjmin. I handled all the programming for the project and was assisted by two artists who created the visual assets for the character, the menu, the skybox, and the pedestal that supports the character.",
+      "Editeur-perso-tools": "Tools : Unreal",
+      "Editeur-perso-lang": "Visual scripting system : Blueprint",
+      "Editeur-perso-time": "Time : 2 week",
       "groupe_village": "3D Fortified Village Group Project",
       "village-goal": "I worked on a group project where we had to create a fortified village using assets that we had to create ourselves in Blender as part of my coursework at CNAM-ENJMIN. Here's what I was able to create.",
       "village-tools": "Tools : Blender",
       "village-time": "Time : 3h",
       "solo": "(Alone)",
       "groupe": "(In group)",
+      "code" : "Game code :",
       "BoutonCV": "view",
       "nav-Portfolio": "My Portfolio",
       "legal-title": "Legal Notice",
@@ -149,21 +161,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-translate]").forEach(el => {
         const key = el.getAttribute("data-translate");
         if (translations[lang][key]) {
-        // Remplace tout le contenu HTML de l'élément, conserve les balises
         el.innerHTML = translations[lang][key];
         }
     });
   }
 
-
-  // Gestion des boutons de langue
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
       const lang = btn.getAttribute("data-lang");
       buttons.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       applyLanguage(lang);
-      // Sauvegarde la langue choisie
       localStorage.setItem("lang", lang);
     });
   });
@@ -210,10 +218,8 @@ window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > lastScroll) {
-        // scroll vers le bas -> cacher header
-        header.style.top = "-100px"; // cache le header
+        header.style.top = "-100px";
     } else {
-        // scroll vers le haut -> montrer header
         header.style.top = "0";
     }
 

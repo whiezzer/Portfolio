@@ -351,6 +351,17 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
+.projet_groupe_editeur_perso {
+    display: flex;
+    text-transform: uppercase;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
 .projet_groupe_Village_fortifie {
     display: flex;
     text-transform: uppercase;
@@ -440,6 +451,13 @@ p {
     flex-direction: column;
     gap: 1em;
     width: 50%;
+}
+
+.Game_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 h2 {
@@ -568,7 +586,7 @@ h2 {
   gap: 15px;
   padding: 15px 25px;
   margin-top: 20px;
-  background: rgba(255, 223, 128, 0.1); /* Doré transparent */
+  background: rgba(255, 223, 128, 0.1); 
   border: 2px solid gold;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
@@ -629,7 +647,6 @@ section {
   color: #ffd966;
 }
 
-/* Fenêtre modale (popup) */
 .legal-modal {
   display: none; 
   position: fixed;
@@ -678,7 +695,6 @@ section {
   text-decoration: underline;
 }
 
-/* Bouton fermer (croix) */
 .close {
   position: absolute;
   top: 15px;
@@ -755,6 +771,11 @@ section {
         border-radius: 8px;
         padding: 5px 20px;
     }
+
+    .Game_links {
+    display: flex;
+    flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 625px) {
@@ -767,30 +788,28 @@ section {
 }
 
 header {
-    position: fixed; /* garde le header fixé en haut */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center; /* centrée sur desktop */
+    justify-content: center; 
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
     background: linear-gradient(to right, #25293e, rgb(36, 27, 58));
-    z-index: 1000; /* au-dessus du reste du contenu */
+    z-index: 1000; 
     transition: top 0.3s;
 }
 
-/* Hamburger button */
 .menu-toggle {
-    display: none; /* caché sur desktop */
+    display: none; 
     font-size: 2rem;
     cursor: pointer;
     color: #f4f4f4;
-    z-index: 1002; /* au-dessus de tout */
+    z-index: 1002; 
 }
 
-/* Menu normal */
 #nav-menu {
     display: flex;
     gap: 50px;
@@ -799,43 +818,43 @@ header {
 /* Mobile */
 @media screen and (max-width: 950px) {
     header {
-        justify-content: flex-start; /* bouton/menu à gauche sur mobile */
+        justify-content: flex-start; 
         padding: 20px 0px;
     }
 
     .header-portfolio {
         display: flex;
-        justify-content: flex-start; /* bouton/menu à gauche sur mobile */
+        justify-content: flex-start; 
         padding: 5px 0px;
     }
 
     .menu-toggle {
-        display: block; /* affiché sur mobile */
+        display: block; 
     }
 
     #nav-menu {
         display: none;
         flex-direction: column;
-        position: absolute; /* menu flottant par-dessus le contenu */
-        top: 60px; /* juste sous le header */
-        left: 20px; /* aligné à gauche */
+        position: absolute;
+        top: 60px;
+        left: 20px; 
         background: rgba(36, 27, 58, 0.95);
         border-radius: 10px;
         padding: 10px;
-        z-index: 1001; /* au-dessus du header */
+        z-index: 1001;
         min-width: 150px;
     }
 
     #nav-menu-portfolio {
         display: none;
         flex-direction: column;
-        position: absolute; /* menu flottant par-dessus le contenu */
-        top: 60px; /* juste sous le header */
-        left: 20px; /* aligné à gauche */
+        position: absolute;
+        top: 60px;
+        left: 20px; 
         background: rgba(36, 27, 58, 0.95);
         border-radius: 10px;
         padding: 10px;
-        z-index: 1001; /* au-dessus du header */
+        z-index: 1001; 
         min-width: 150px;
     }
 
@@ -904,6 +923,7 @@ header {
   .projet_ShootEm_Up,
   .projet_groupe_NSI,
   .projet_groupe_EnJam,
+  .projet_groupe_Mars2,
   .projet_groupe_Village_fortifie {
     flex-direction: column;
     align-items: flex-start;
@@ -918,14 +938,14 @@ header {
     align-items: flex-start; 
     width: 80%;
     margin: 0 auto;
-    font-size: 0.85rem;     /* Texte plus petit */
-    line-height: 1.2;       /* Moins d’espace vertical */
-    gap: 0.4em;             /* Espacement réduit entre les lignes */
+    font-size: 0.85rem;     
+    line-height: 1.2;       
+    gap: 0.4em;             
   }
 
   .projets li,
   .Projects-3D li {
-    margin-bottom: 0.2em;  /* Espacement minimal entre chaque ligne */
+    margin-bottom: 0.2em;  
   }
 
   .CV {
@@ -982,8 +1002,8 @@ header {
     border-style: inset;
     border-color: rgb(194, 157, 12);
     box-shadow: -5px 5px 0px #00000052;
-    width: 100%; /* 100% de la largeur de la fenêtre */
-    box-sizing: border-box; /* inclut padding et bordure dans la largeur */
+    width: 100%; 
+    box-sizing: border-box; 
     margin: 150px 0;
     box-sizing: border-box;
   }
