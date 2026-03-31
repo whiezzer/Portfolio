@@ -163,12 +163,10 @@ h1 {
 .moi {
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;
     align-items: center;
 }
 
 p {
-    text-transform: uppercase;
     text-align: center;
     color: #252f61;
 }
@@ -247,8 +245,7 @@ p {
 }
 
 .Images_Competences img {
-    flex: 0 0 10px; 
-    height: auto;
+    height: 125px;
     width: 125px;
 }
 
@@ -262,8 +259,6 @@ p {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 15px 25px;
-    margin-top: 20px;
     background: rgba(255, 223, 128, 0.1); 
     border: 2px solid gold;
     border-radius: 20px;
@@ -287,7 +282,6 @@ p {
 
 .projet_space_invaders {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -298,7 +292,6 @@ p {
 
 .Projet_Platformer_2d {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -309,7 +302,6 @@ p {
 
 .projet_ShootEm_Up {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -320,7 +312,6 @@ p {
 
 .projet_groupe_NSI {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -331,7 +322,6 @@ p {
 
 .projet_groupe_EnJam {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -342,7 +332,6 @@ p {
 
 .projet_groupe_Mars2 {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -353,7 +342,6 @@ p {
 
 .projet_groupe_editeur_perso {
     display: flex;
-    text-transform: uppercase;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -364,7 +352,16 @@ p {
 
 .projet_groupe_Village_fortifie {
     display: flex;
-    text-transform: uppercase;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
+.projet_Assets_House {
+    display: flex;
     color: #252f61;
     background: rgba(255, 216, 157, 0.103);
     border-radius: 3%;
@@ -374,6 +371,12 @@ p {
 }
 
 .imagesVillage {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.imagesHouse {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -392,7 +395,19 @@ p {
   cursor: pointer;
 }
 
+.imagesHouse button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .imagesVillage button:hover {
+  color: orange;
+}
+
+.imagesHouse button:hover {
   color: orange;
 }
 
@@ -416,6 +431,7 @@ p {
     backdrop-filter: blur(5px);
     border-radius: 5%;
     width: 50%;
+    object-fit: cover;
 }
 
 .Projects-3D video {
