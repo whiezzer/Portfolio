@@ -350,6 +350,16 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
+.projet_groupe_Path_of_matches {
+    display: flex;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
 .projet_groupe_Village_fortifie {
     display: flex;
     color: #252f61;
@@ -382,9 +392,11 @@ p {
     width: 50%;
 }
 
-.buttonImage {
+
+.projets .imagesProjets {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
 }
 
 .imagesVillage button {
@@ -403,11 +415,23 @@ p {
   cursor: pointer;
 }
 
+.projets .imagesProjets button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .imagesVillage button:hover {
   color: orange;
 }
 
 .imagesHouse button:hover {
+  color: orange;
+}
+
+.projets .imagesProjets button:hover{
   color: orange;
 }
 
@@ -450,6 +474,15 @@ p {
     backdrop-filter: blur(5px);
     border-radius: 5%;
     width: 50%;
+}
+
+.projets .imagesProjets img {
+    border-style: ridge;
+    border-color: rgb(192, 153, 0);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5%;
+    width: 100%;
 }
 
 .Projects-3D img {
@@ -906,7 +939,9 @@ header {
 
   .projets video,
   .projets img,
-  .imagesVillage {
+  .imagesVillage,
+  .imagesHouse,
+  .projets .imagesProjets {
     width: 95%;
     max-width: 100%;
     height: auto;
@@ -921,7 +956,9 @@ header {
   .projet_groupe_EnJam,
   .projet_groupe_Mars2,
   .projet_groupe_editeur_perso,
-  .projet_groupe_Village_fortifie {
+  .projet_groupe_Village_fortifie,
+  .projet_Assets_House,
+  .projet_groupe_Path_of_matches {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px;

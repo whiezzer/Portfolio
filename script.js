@@ -56,6 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "Editeur-perso-tools": "Outil : Unreal",
       "Editeur-perso-lang": "Système de scripting visuel : Blueprint",
       "Editeur-perso-time": "Temp : 2 semaine",
+      "POM-goal": "Projet de fin d'année réalisé dans le cadre de ma première année de licence Informatique au CNAM Enjmin. Il s'agit du projet le plus ambitieux que j'ai eu l'occasion de mener jusqu'à présent. Cette expérience m'a permis d'acquérir de nombreuses compétences, tant sur le plan technique que dans le travail en équipe. Grâce à ce projet, je maîtrise désormais bien mieux Unity et GitHub, et j'ai développé une méthode de travail plus rigoureuse et plus professionnelle.",
+      "POM-tools": "Outil : Unity",
+      "POM-lang": "Langage de programmation : C#",
+      "POM-time": "Temp : 6 mois",
       "groupe_village": "projet de groupe Village fortifié 3D",
       "village-goal": "J'ai fais un projet de groupe où on devait réaliser un village fortifié à l'aide d'assets qu'on devait réaliser nous même sur blender dans le cadre de mes cours au sein du CNAM-ENJMIN. Voici ce que j'ai pu réaliser.",
       "village-tools": "Outil : Blender",
@@ -136,6 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "Editeur-perso-tools": "Tool : Unreal",
       "Editeur-perso-lang": "Visual scripting system : Blueprint",
       "Editeur-perso-time": "Time : 2 week",
+      "POM-goal": "End-of-year project completed as part of my first year of the Bachelor's degree in Computer Science at CNAM-Enjmin. This is the most ambitious project I have worked on so far. It allowed me to develop a wide range of skills, both technically and through teamwork. Thanks to this project, I am now much more confident using Unity and GitHub, and I have developed a more rigorous and professional approach to software development.",
+      "POM-tools": "Tool : Unity",
+      "POM-lang": "Programming language : C#",
+      "POM-time": "Time : 6 months",
       "groupe_village": "3D Fortified Village Group Project",
       "village-goal": "I worked on a group project where we had to create a fortified village using assets that we had to create ourselves in Blender as part of my coursework at CNAM-ENJMIN. Here's what I was able to create.",
       "village-tools": "Tool : Blender",
@@ -267,6 +275,12 @@ const imagesHouse = [
   "./assets/Images/RenduAssetHouse-bureau.png",
 ];
 
+const imagesPOM = [
+  "./assets/Images/PathOfMatches1.png",
+  "./assets/Images/PathOfMatches2.png",
+  "./assets/Images/PathOfMatches3.png",
+];
+
 const leftVillage = document.getElementById("leftVillage");
 const rightVillage = document.getElementById("rightVillage");
 const imgVillage = document.getElementById("imageVillage");
@@ -274,6 +288,10 @@ const imgVillage = document.getElementById("imageVillage");
 const leftHouse = document.getElementById("leftHouse");
 const rightHouse = document.getElementById("rightHouse");
 const imgHouse = document.getElementById("imageHouse");
+
+const leftPOM = document.getElementById("leftPOM");
+const rightPOM = document.getElementById("rightPOM");
+const imgPOM = document.getElementById("imagePOM");
 
 function createCarousel(leftBtn, rightBtn, img, images) {
   let index = 0; 
@@ -293,3 +311,4 @@ function createCarousel(leftBtn, rightBtn, img, images) {
 
 createCarousel(leftVillage, rightVillage, imgVillage, imagesVillage);
 createCarousel(leftHouse, rightHouse, imgHouse, imagesHouse);
+createCarousel(leftPOM, rightPOM, imgPOM, imagesPOM);
