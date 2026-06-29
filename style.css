@@ -360,6 +360,16 @@ p {
     box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
 }
 
+.projet_groupe_Godomon {
+    display: flex;
+    color: #252f61;
+    background: rgba(255, 216, 157, 0.103);
+    border-radius: 3%;
+    margin: 10px 10px;
+    padding: 25px;
+    box-shadow: -13px 16px 20px 0px rgb(46, 11, 11);
+}
+
 .projet_groupe_Village_fortifie {
     display: flex;
     color: #252f61;
@@ -958,7 +968,8 @@ header {
   .projet_groupe_editeur_perso,
   .projet_groupe_Village_fortifie,
   .projet_Assets_House,
-  .projet_groupe_Path_of_matches {
+  .projet_groupe_Path_of_matches,
+  .projet_groupe_Godomon {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px;
